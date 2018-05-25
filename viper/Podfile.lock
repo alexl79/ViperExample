@@ -1,0 +1,28 @@
+PODS:
+  - LightRoute (2.1.18)
+  - Swinject (2.4.0)
+  - SwinjectStoryboard (1.2.1):
+    - Swinject (~> 2.3)
+
+DEPENDENCIES:
+  - LightRoute (from `https://github.com/SpectralDragon/LightRoute.git`)
+  - Swinject
+  - SwinjectStoryboard
+
+EXTERNAL SOURCES:
+  LightRoute:
+    :git: https://github.com/SpectralDragon/LightRoute.git
+
+CHECKOUT OPTIONS:
+  LightRoute:
+    :commit: 8f992874daeebcabaa7249743a7e3d637a73f9e1
+    :git: https://github.com/SpectralDragon/LightRoute.git
+
+SPEC CHECKSUMS:
+  LightRoute: 85b8e17345a7b22d7067608b8ea07b37f7a80249
+  Swinject: a1364b0f66c2736bb03c1c7cab54809e16df25da
+  SwinjectStoryboard: de60d1d30fbf442fe90fc5c31d9fff89cf3ef64f
+
+PODFILE CHECKSUM: 4c6e34bc38ea462fb36f54307a1f1da2ca6bfc32
+
+COCOAPODS: 1.1.1
