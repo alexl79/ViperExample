@@ -15,12 +15,14 @@ class WorkScreenPresenter {
     weak var view: WorkScreenViewInput!
     var interactor: WorkScreenInteractorInput!
     var router: WorkScreenRouterInput!
+    // MARK: vars
+    var dataFromMain: String = ""
 }
 
 // MARK: - WorkScreenModuleInput
 extension WorkScreenPresenter: WorkScreenModuleInput {
     func configue(with data: Any?) {
-        
+        dataFromMain = data as! String
     }
 }
 
@@ -37,7 +39,7 @@ extension WorkScreenPresenter: WorkScreenRouterOutput {
 // MARK: - WorkScreenViewOutput
 extension WorkScreenPresenter: WorkScreenViewOutput {
     func didTriggerViewReadyEvent() {
-        view.setupInitialState()
+        view.setupInitialState(title: dataFromMain)
     }
     
     func closeButtonTapped() {

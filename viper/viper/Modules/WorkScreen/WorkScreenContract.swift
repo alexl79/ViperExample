@@ -33,7 +33,7 @@ protocol WorkScreenRouterOutput: class {
 
 // MARK: view
 protocol WorkScreenViewInput: class {
-    func setupInitialState()
+    func setupInitialState(title: String)
 }
 
 protocol WorkScreenViewOutput: class {

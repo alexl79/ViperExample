@@ -24,7 +24,7 @@ protocol MainScreenInteractorOutput: class {
 
 // MARK: router
 protocol MainScreenRouterInput: class {
-    func launchWorkScreen()
+    func launchWorkScreen(data: String)
 }
 
 protocol MainScreenRouterOutput: class {

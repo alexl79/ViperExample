@@ -41,6 +41,6 @@ extension MainScreenPresenter: MainScreenViewOutput {
     }
     
     func openButtonTapped() {
-        router.launchWorkScreen()
+        router.launchWorkScreen(data: "String from Main Screen")
     }
 }

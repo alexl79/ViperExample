@@ -16,9 +16,9 @@ class MainScreenRouter {
 }
 
 extension MainScreenRouter: MainScreenRouterInput {
-    func launchWorkScreen() {
-        try? transitionHandler.forSegue(identifier: "WorkScreenSegueID", to: WorkScreenViewController.self).then({ (moduleInput) in
-            return moduleInput
+    func launchWorkScreen(data: String) {
+        try? transitionHandler.forSegue(identifier: "WorkScreenSegueID", to: WorkScreenModuleInput.self).then({ (moduleInput) in
+            moduleInput.configue(with: data)
         })
     }
 }

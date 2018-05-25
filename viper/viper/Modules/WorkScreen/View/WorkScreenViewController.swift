@@ -11,6 +11,8 @@ import UIKit
 class WorkScreenViewController: BaseViewController {
     // MARK: viper
     var output: WorkScreenViewOutput!
+    // MARK: outlets
+    @IBOutlet weak var labelCaption: UILabel!
     
     // MARK: life cycle
     override func viewDidLoad() {
@@ -29,7 +31,7 @@ class WorkScreenViewController: BaseViewController {
 
 // MARK: - WorkScreenViewInput
 extension WorkScreenViewController: WorkScreenViewInput {
-    func setupInitialState() {
-        
+    func setupInitialState(title: String) {
+        labelCaption.text = title
     }
 }
